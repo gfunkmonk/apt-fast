@@ -4,7 +4,7 @@ if [ -f /etc/apt-fast.conf ]; then
 fi
 _APTMGR="${_APTMGR%% *}"
 if ! type "${_APTMGR}" &>/dev/null; then
-    _APTMGR=apt-get
+    _APTMGR=apt
 fi
 completion_cmd="${_APTMGR//-/_}"
 
